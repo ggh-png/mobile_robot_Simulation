@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<launch>
+
+	<include file = "$(find marvel_v1)/launch/marvel_v1_gazebo.launch"/>
+
+	<node name ="slam_gmapping" pkg = "gmapping" type = "slam_gmapping">
+		<param name = "base_link" value = "base"/>
+	</node>
+
+	<!-- Load Map -->
+	<!-- <node name = "map_server" pkg = "map_server" type = "map_server" args = "$(find xacro_stl_robot)/maps/map.yaml"/>
+
+	<include file="$(find xacro_stl_robot)/launch/amcl.launch"/>
+	<include file="$(find xacro_stl_robot)/launch/move_base.launch"/> -->
+
+
+</launch>

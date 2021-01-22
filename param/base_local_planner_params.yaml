@@ -1,0 +1,30 @@
+TrajectoryPlannerROS:
+
+#  navigation velocity in rviz
+  max_vel_x: 5.0
+  min_vel_x: -5.0
+
+  max_vel_y: 0.0
+  max_vel_y: 0.0
+
+  max_vel_trans: 1.60
+  min_vel_trans: 1.18
+
+  max_vel_theta: 1.82
+  min_vel_theta: -0.9
+
+  acc_lim_x: 5.5
+  acc_lim_y: 0.0
+  acc_lim_theta: 3.2
+  
+  xy_goal_tolerance: 0.05
+  yaw_goal_tolerance: 0.17
+  latch_xy_goal_tolerance: false
+
+  sim_time: 2.0
+  vx_samples: 20
+  vy_samples: 0
+  vth_samples: 40
+  controller_frequency: 5.0
+
+  holonomic_robot: false

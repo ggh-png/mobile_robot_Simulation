@@ -1,0 +1,42 @@
+<launch>
+
+  <include file = "$(find marvel_v1)/description/launch/description.launch"/>
+
+  <arg name="rviz_config" default="false"/>
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    <param name="user_gui" value="false"/>
+  </node>
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+    <param name="publish_frequency" type="double" value="50.0"/>
+    <param name="tf_prefix" value=""/>
+  </node>
+
+  <group if='$(arg rviz_config)'>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find marvel_v1)/description/rviz/xacro.rviz"/>
+  </group>
+
+</launch>
+
+
+<!-- <launch>
+  <arg
+    name="model" />
+  <param
+    name="robot_description"
+    textfile="$(find serving_robot_v6)/urdf/serving_robot_v6.urdf" />
+  <node
+    name="joint_state_publisher_gui"
+    pkg="joint_state_publisher_gui"
+    type="joint_state_publisher_gui" />
+  <node
+    name="robot_state_publisher"
+    pkg="robot_state_publisher"
+    type="robot_state_publisher" />
+  <node
+    name="rviz"
+    pkg="rviz"
+    type="rviz"
+    args="-d $(find serving_robot_v6)/urdf.rviz" />
+</launch> -->
