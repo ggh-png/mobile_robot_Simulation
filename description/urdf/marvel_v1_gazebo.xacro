@@ -145,7 +145,7 @@
         <gaussianNoise>0.0</gaussianNoise>
         <xyzOffset>0 0 0</xyzOffset>
         <rpyOffset>0 0 0</rpyOffset>
-        <frameName>imu_to_link</frameName>
+        <frameName>imu_link</frameName>
         <initialOrientationAsReference>false</initialOrientationAsReference>
       </plugin>
       <pose>0 0 0 0 0 0</pose>

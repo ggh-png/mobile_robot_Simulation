@@ -4,7 +4,7 @@
 	<include file = "$(find marvel_v1)/launch/marvel_v1_gazebo.launch"/>
 
 	<!-- Load Map -->
-	<node name = "map_server" pkg = "map_server" type = "map_server" args = "$(find marvel_v1)/maps/final.yaml"/>
+	<node name = "map_server" pkg = "map_server" type = "map_server" args = "$(find marvel_v1)/maps/map2.yaml"/>
 
 	<include file="$(find marvel_v1)/launch/amcl.launch"/>
 	<include file="$(find marvel_v1)/launch/move_base.launch"/>
