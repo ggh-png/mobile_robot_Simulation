@@ -1,5 +1,21 @@
 # **모바일 로봇 시뮬레이션**
 
+## Membor
+
+[윤우성(Woosung Yun )](https://github.com/ggh-png), 정우진(**Jung Woojin), 김민서(Minseo Kim)**
+
+Robot sw 
+
+[윤우성(Woosung Yun )](https://github.com/ggh-png)
+
+Robot hw
+
+**김민서(Minseo Kim)**
+
+Robot map
+
+정우진(**Jung Woojin)**
+
 
 ![ezgif.com-gif-maker.gif](result__2__AdobeExpress-_3_.gif)
 
